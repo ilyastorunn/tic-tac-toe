@@ -1,0 +1,51 @@
+.buttonGrid {
+  display: flex;
+  align-items: flex-start;
+  gap: 21px;
+  background-color: #fff;
+}
+
+.resetButton {
+  width: 180px;
+  height: 44px;
+  display: flex;
+  padding: 3px 57px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #5389e6;
+  box-shadow: 0px 5px 5px 0px rgba(83, 137, 230, 0.75);
+}
+
+.homeButton {
+  width: 180px;
+  height: 44px;
+  display: flex;
+  padding: 3px 57px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #3f3f3f;
+  box-shadow: 0px 5px 5px 0px rgba(30, 30, 30, 0.75);
+}
+
+.resetButton a,
+.homeButton a {
+  color: white;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.resetButton a {
+  background-color: #5389e6;
+}
+
+.homeButton a {
+  background-color: #3f3f3f;
+}

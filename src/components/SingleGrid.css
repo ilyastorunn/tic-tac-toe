@@ -1,0 +1,50 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 35px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #fff;
+}
+
+.emoji {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #fff;
+}
+
+.emoji h4 {
+  margin: 0;
+}
+
+.emoji h4,
+.result h4 {
+  background-color: #fff;
+}
+
+.result {
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
