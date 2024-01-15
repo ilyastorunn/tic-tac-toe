@@ -1,0 +1,96 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  font-family: "Saira", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+}
+
+.emojiGrid {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.emojiGrid h4 {
+  background-color: #fff;
+  font-size: 80px;
+}
+
+.title {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title h1 {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 21px;
+}
+
+.button {
+  display: flex;
+  padding: 6px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.button a {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #fff;
+}
+
+.author {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.author p {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

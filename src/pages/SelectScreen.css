@@ -1,0 +1,108 @@
+.selectionBox {
+  font-family: "Saira", sans-serif;
+  width: 450px;
+  height: 261px;
+  display: flex;
+  padding: 20px 35px;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.textBox h4 {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #fff;
+  margin: 0;
+}
+
+.textBox span {
+  width: 375px;
+  height: 1px;
+  background-color: #e5e7e8;
+}
+
+.emojiBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 47px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.emojiBox h4 {
+  background-color: #fff;
+  margin: 0;
+  font-size: 70px;
+}
+
+.emojiBox h5 {
+  background-color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buttonsBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 21px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.backButton {
+  display: flex;
+  padding: 9px 71px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #5389e6;
+  box-shadow: 0px 5px 5px 0px rgba(83, 137, 230, 0.75);
+}
+
+.back {
+  background-color: #5389e6;
+  color: #fff;
+  font-size: 16.08px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.playButton {
+  display: flex;
+  padding: 9px 71px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #3f3f3f;
+  box-shadow: 0px 5px 5px 0px rgba(30, 30, 30, 0.75);
+}
+
+.play {
+  background-color: #3f3f3f;
+  color: #fff;
+  font-size: 16.08px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

@@ -1,0 +1,90 @@
+.gameMode {
+  font-family: "Saira", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gameModeBox {
+  width: 449px;
+  height: 147px;
+  display: flex;
+  padding: 20px 35px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.gameModeText {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameModeText h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #fff;
+  margin: 0;
+}
+
+.gameModeText span {
+  width: 375px;
+  height: 1px;
+  background-color: #e5e7e8;
+}
+
+.gameModeButtons {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.easyButton {
+  display: flex;
+  padding: 9px 70px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #5389e6;
+  box-shadow: 0px 5px 5px 0px rgba(83, 137, 230, 0.75);
+}
+
+.easy {
+  color: #fff;
+  background-color: #5389e6;
+  text-align: center;
+  font-size: 16.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.hardButton {
+  display: flex;
+  padding: 9px 70px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #3f3f3f;
+  box-shadow: 0px 5px 5px 0px rgba(30, 30, 30, 0.75);
+}
+
+.hard {
+  background-color: #3f3f3f;
+  color: #fff;
+  text-align: center;
+  font-size: 16.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
