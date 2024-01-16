@@ -85,6 +85,27 @@
   background-color: #fff;
 }
 
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: #d9d9d9;
+  margin: 5px;
+}
+
+.box.X {
+  color: #ff0000;
+}
+
+.box.O {
+  color: #00ff00;
+}
+
 .gameBoxOne,
 .gameBoxTwo,
 .gameBoxThree {
