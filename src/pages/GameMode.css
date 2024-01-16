@@ -66,6 +66,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-decoration: none;
 }
 
 .hardButton {
@@ -87,4 +88,5 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-decoration: none;
 }

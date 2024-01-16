@@ -1,5 +1,6 @@
 import React from "react";
 import "./GameMode.css";
+import { Link } from "react-router-dom";
 
 export default function GameMode() {
   return (
@@ -12,10 +13,10 @@ export default function GameMode() {
           </div>
           <div className="gameModeButtons">
             <div className="easyButton">
-              <a className="easy">Easy</a>
+              <Link to="/game" className="easy">Easy</Link>
             </div>
             <div className="hardButton">
-              <a className="hard">Hard</a>
+              <Link to="/game" className="hard">Hard</Link>
             </div>
           </div>
         </div>

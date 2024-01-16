@@ -1,5 +1,6 @@
 import React from "react";
 import "./SelectScreen.css";
+import { Link } from "react-router-dom";
 
 export default function SelectScreen() {
   return (
@@ -16,10 +17,10 @@ export default function SelectScreen() {
         </div>
         <div className="buttonsBox">
           <div className="backButton">
-            <a className="back">Back</a>
+            <Link to="/" className="back">Back</Link>
           </div>
           <div className="playButton">
-            <a className="play">Play</a>
+            <Link to="/gamemode" className="play">Play</Link>
           </div>
         </div>
       </div>

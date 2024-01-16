@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 export default function Home() {
@@ -13,10 +14,10 @@ export default function Home() {
         </div>
         <div className="buttons">
           <div className="button">
-            <a>Single Player</a>
+          <Link className="buttonLink" to="/selection">Single Player</Link>
           </div>
           <div className="button">
-            <a>Multi Player</a>
+            <Link className="buttonLink" to="/game">Multi Player</Link>
           </div>
         </div>
         <div className="author">
