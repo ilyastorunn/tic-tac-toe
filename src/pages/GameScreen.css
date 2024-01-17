@@ -9,60 +9,24 @@
   display: flex;
   padding: 15px 25px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 10px;
   border-radius: 20px;
   background-color: #fff;
-  width: 470px;
+  width: 500px;
   height: 60px;
 }
 
 .players {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1px;
   background-color: #fff;
-  width: 470px;
-  height: 60px;
+  
 }
 
-.playerOne {
-  display: flex;
-  padding: 10px 97px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 20px;
-  background-color: #d9d9d9;
-  height: 40px;
-}
-
-.playerOne h4 {
-  text-align: center;
+.status {
   font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  background-color: #d9d9d9;
-  margin: 0;
-}
-
-.playerTwo {
-  display: flex;
-  padding: 10px 97px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #fff;
-  height: 40px;
-}
-
-.playerTwo h4 {
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
   background-color: #fff;
   margin: 0;
 }

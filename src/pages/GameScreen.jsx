@@ -37,12 +37,7 @@ export default function GameScreen() {
     <div className="gameScreen">
       <div className="playerEmojis">
         <div className={`players ${xIsNext ? "playerX" : "playerO"}`}>
-          <div className="playerOne">
-            <h4>😅</h4>
-          </div>
-          <div className="playerTwo">
-            <h4>🌮</h4>
-          </div>
+          <h4 className="status">{status}</h4>
         </div>
       </div>
       <div className="gameGrid">
@@ -64,7 +59,6 @@ export default function GameScreen() {
           </div>
         </div>
       </div>
-      <div className="status">{status}</div>
     </div>
   );
 }
