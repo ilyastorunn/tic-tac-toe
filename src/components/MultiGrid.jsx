@@ -1,8 +1,11 @@
 import React from "react";
 import "./MultiGrid.css";
 import Buttons from "./Buttons";
+import { useParams } from "react-router-dom";
 
-export default function MultiGrid() {
+export default function Winner() {
+  const { winnerName } = useParams();
+
   return (
     <div className="grid">
       <div className="text">
@@ -10,7 +13,7 @@ export default function MultiGrid() {
           <h4>
             Congratulations,
             <br />
-            Player 😤 is the winner!
+            Player {winnerName} is the winner!
           </h4>
         </div>
       </div>

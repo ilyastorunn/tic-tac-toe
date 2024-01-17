@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./GameScreen.css";
+import { useNavigate } from "react-router-dom";
 
 export default function GameScreen() {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
+  const navigate = useNavigate();
 
   const handleClick = (index) => {
     const newBoard = [...board];
@@ -29,9 +31,22 @@ export default function GameScreen() {
   };
 
   const winner = calculateWinner(board);
+
+  useEffect(() => {
+    if (winner) {
+      navigate(`/winner/${winner}`);
+    }
+  }, [winner, navigate]);
+
   const status = winner
-    ? `Winner: ${winner}`
+    ? `Conratulations, Player ${winner} is the winner!`
     : `Next player: ${xIsNext ? "😅" : "🌮"}`;
+
+  // if (winner) {
+  //   navigate(`winner/${winner}`);
+  // } else {
+  //   const status = `Next player: ${xIsNext ? "😅" : "🌮"}`;
+  // }
 
   return (
     <div className="gameScreen">

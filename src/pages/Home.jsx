@@ -5,7 +5,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <div className="box">
+      <div className="homeBox">
         <div className="emojiGrid">
           <h4>😄</h4>
         </div>

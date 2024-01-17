@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-.box {
+.homeBox {
   font-family: "Saira", sans-serif;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: #629cff;
 }
 
 .title h1 {

@@ -22,13 +22,13 @@
   align-items: center;
   gap: 1px;
   background-color: #fff;
-  
 }
 
 .status {
   font-size: 40px;
   background-color: #fff;
   margin: 0;
+  font-family: "Saira", sans-serif;
 }
 
 .gameGrid {

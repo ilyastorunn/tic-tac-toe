@@ -3,6 +3,7 @@
   align-items: flex-start;
   gap: 21px;
   background-color: #fff;
+  font-family: "Saira", sans-serif;
 }
 
 .resetButton {
@@ -35,7 +36,6 @@
 .homeButton a {
   color: white;
   text-align: center;
-  font-family: "Saira", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -48,4 +48,8 @@
 
 .homeButton a {
   background-color: #3f3f3f;
+}
+
+.navButtons {
+  text-decoration: none;
 }
