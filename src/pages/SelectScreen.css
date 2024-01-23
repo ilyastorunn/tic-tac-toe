@@ -42,12 +42,15 @@
   gap: 47px;
   background-color: #fff;
   margin-top: 10px;
+  /* position: relative; */
 }
 
 .emojiBox h4 {
   background-color: #fff;
   margin: 0;
   font-size: 70px;
+  /* position: absolute;
+  left: 0; */
 }
 
 .emojiBox h5 {

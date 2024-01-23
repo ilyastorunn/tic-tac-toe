@@ -2,10 +2,26 @@ import React, { useEffect, useState } from "react";
 import "./GameScreen.css";
 import { useNavigate } from "react-router-dom";
 
+const emojis = ["😅", "🌮", "🚀", "🍕", "🎉", "🎸", "🍔", "🏆", "🌈", "⚡️"];
+
 export default function GameScreen() {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
+  const [playerEmojis, setPlayerEmojis] = useState(randomEmojis());
   const navigate = useNavigate();
+
+  function randomEmojis() {
+    let emoji1, emoji2;
+    do {
+      const randomIndexes = Array.from({ length: 2 }, () =>
+        Math.floor(Math.random() * emojis.length)
+      );
+      emoji1 = emojis[randomIndexes[0]];
+      emoji2 = emojis[randomIndexes[1]];
+    } while (emoji1 === emoji2);
+
+    return [emoji1, emoji2];
+  }
 
   const handleClick = (index) => {
     const newBoard = [...board];
@@ -14,7 +30,7 @@ export default function GameScreen() {
       return;
     }
 
-    newBoard[index] = xIsNext ? "😅" : "🌮";
+    newBoard[index] = xIsNext ? playerEmojis[0] : playerEmojis[1];
     setBoard(newBoard);
     setXIsNext(!xIsNext);
   };
@@ -35,18 +51,14 @@ export default function GameScreen() {
   useEffect(() => {
     if (winner) {
       navigate(`/winner/${winner}`);
+    } else {
+      setPlayerEmojis(randomEmojis());
     }
   }, [winner, navigate]);
 
   const status = winner
-    ? `Conratulations, Player ${winner} is the winner!`
-    : `Next player: ${xIsNext ? "😅" : "🌮"}`;
-
-  // if (winner) {
-  //   navigate(`winner/${winner}`);
-  // } else {
-  //   const status = `Next player: ${xIsNext ? "😅" : "🌮"}`;
-  // }
+    ? `Congratulations, Player ${winner} is the winner!`
+    : `Next player: ${xIsNext ? playerEmojis[0] : playerEmojis[1]}`;
 
   return (
     <div className="gameScreen">
