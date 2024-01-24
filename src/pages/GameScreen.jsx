@@ -47,17 +47,22 @@ export default function GameScreen() {
   };
 
   const winner = calculateWinner(board);
+  const isBoardFull = board.every((square) => square !== null);
 
   useEffect(() => {
     if (winner) {
       navigate(`/winner/${winner}`);
+    } else if (isBoardFull) {
+      navigate("/draw");
     } else {
       setPlayerEmojis(randomEmojis());
     }
-  }, [winner, navigate]);
+  }, [winner, isBoardFull, navigate]);
 
   const status = winner
     ? `Congratulations, Player ${winner} is the winner!`
+    : isBoardFull
+    ? "It's a draw!"
     : `Next player: ${xIsNext ? playerEmojis[0] : playerEmojis[1]}`;
 
   return (

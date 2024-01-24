@@ -1,5 +1,5 @@
 import React from "react";
-import "./MultiGrid.css";
+import "./Winner.css";
 import Buttons from "./Buttons";
 import { useParams } from "react-router-dom";
 
