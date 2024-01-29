@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/game" element={<GameScreen />}  />
+          <Route path="/game" element={<GameScreen isSinglePlayer={true} />} />
           <Route path="/winner/:winnerName" element={<Winner />} />
           <Route path="/draw" element={<Draw />} />
         </Routes>
