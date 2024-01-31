@@ -14,10 +14,7 @@ export default function Home() {
         </div>
         <div className="buttons">
           <div className="button">
-          <Link className="buttonLink" to="/game">Single Player</Link>
-          </div>
-          <div className="button">
-            <Link className="buttonLink" to="/game">Multi Player</Link>
+            <Link className="buttonLink" to="/game">Play!</Link>
           </div>
         </div>
         <div className="author">
